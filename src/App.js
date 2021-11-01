@@ -1,11 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import About from "./components/about";
+import WorkExp from "./components/workExperience";
+import Skills from "./components/skills";
+import Education from "./components/education";
+import Card from "./components/profile";
+import "./style.css";
 
-export default class App extends Component {
-  render() {
+ function App() {
+ 
     return (
-      <div>
-        <h1>your clean react code</h1>
+      <div className="container">
+        <div className="part1">
+          <Card />
+        </div>
+        <div className="part2">
+          <About />
+          <Education />
+          <Skills />
+          <WorkExp />
+        </div>
       </div>
-    )
-  }
+    );
+  
 }
+
+export default App
